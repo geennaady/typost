@@ -1,0 +1,65 @@
+.navbar
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #fff
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-between //распределение элементов по ширине
+        min-height: 80px
+    &__phone
+        display: block //перенос на нужную строчку
+        font-size: 19px
+        text-decoration: none
+        color: black
+        +bold
+    &__mobile, &__landline
+        text-align: right //выравнивание по правому краю
+    &-string
+        margin-top: 5px
+        display: block
+        font-size: 14px
+        text-decoration: none
+        color: $gruy  
+    &__button
+        border: 2px solid $blue
+        +bold
+        font-size: 14px
+        color: $blue
+        
+        padding: 17px 22px
+        text-transform: uppercase
+        background-color: transparent
+.menu
+    &-button 
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: transparent // дает прозрачность
+        border: none // убирает нижние грани
+        border-right: 1px solid rgba(#510bba, .1)
+        border-left: 1px solid rgba(#510bba, .1)
+        height: 80px
+        width: 70px
+        //margin-right: 30px // отступ
+        &__line
+            display: block 
+            width: 20px
+            height: 3px
+            background-color: #89a9eb
+            margin: 2px 0 
+
+.logo
+    &-text
+        display: block
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 5px
+        +bold
+    &-description
+        display: block // помогает выстраивать отступы у строчек
+        font-size: 14px
+        color: $gruy
