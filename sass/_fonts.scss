@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Proxima Nova Light';
+    src: url('../skinali/skinali/fonts/ProximaNova-Light.eot');
+    src: url('../skinali/skinali/fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+    url('../skinali/skinali/fonts/ProximaNova-Light.woff') format('woff'),
+    url('../skinali/skinali/fonts/ProximaNova-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    
+@mixin light {
+        font-family: 'Proxima Nova Light', sans-serif;
+    }
