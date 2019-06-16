@@ -107,6 +107,18 @@ body {
   background-color: transparent;
 }
 
+.menu {
+  position: fixed;
+  width: 100%;
+  top: 80px;
+  padding: 16px 0;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 17px;
+}
+
 .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
