@@ -1,8 +1,11 @@
 //Базовые настройки сетки
 @import 'grid'
-// Шапка сайта
-@import 'blocks/navbar'
+//Настройка шрифтов
+//Сохраняй порядок (иерархию) добавления import. У меня тут стоял интерфейс выше чем fonts
+//И компилятор считывал mixin раньше чем видел fonts и писал undefined
+@import 'fonts'
 //Настройки интерфейса
 @import 'interface'
-//Настройка шрифтов
-@import 'fonts'
+// Шапка сайта
+@import 'blocks/navbar'
+
