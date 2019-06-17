@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button class="button" onclick="fun1();">Sing the song</button>  
+    <div id="song">Sing here</div>      
+    <script>/*
+    var a=document.getElementsById('song');
+        function fun2() {
+            var w="bottles";
+            var c=99;
+            while (c>0) {
+                link.innerHTML=c+" "+w+" of beer on the wall";
+                link.innerHTML=c+" "+w+" of beer,";
+                link.innerHTML="Take one down, pass it around";
+                c=c-1;
+                if(c>0){
+                    link.innerHTML=c+" "+w+" of beer on the wall";
+                }
+                else {
+                    link.innerHTML="No more "+w+" of beer on the wall";
+                }
+            }
+        }
+        function fun1() {
+            var element=document.getElementById('song');
+            var link=document.createElement('div');
+            var br=document.createElement('br');
+            c="bot"
+            link.innerHTML=c;
+            element.appendChild(br);
+            element.appendChild(link);
+        }
+        
+        var w="bottles";
+            var c=99;
+            while (c>0) {
+                console.log(c+" "+w+" of beer on the wall");
+                console.log(c+" "+w+" of beer,");
+                console.log("Take one down, pass it around");
+                c=c-1;
+                if(c>0){
+                    console.log(c+" "+w+" of beer on the wall");
+                }
+                else {
+                    console.log("No more "+w+" of beer on the wall");
+                }
+            }*/
+            var w="bottles";
+            
+            for(var c=99; c>0; c--){
+                console.log(c+" "+w+" of beer on the wall");
+                console.log(c+" "+w+" of beer,");
+                console.log("Take one down, pass it around");
+                console.log(c+" "+w+" of beer on the wall.");
+            }
+            console.log("No more "+w+" of beer on the wall.");
+    </script>
+</body>
+</html>
