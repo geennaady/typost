@@ -4,6 +4,7 @@
     top: 0
     width: 100%
     background-color: #fff
+    z-index: 99
     &__wrap
         display: flex
         align-items: center
@@ -34,14 +35,25 @@
         background-color: transparent
 .menu
     position: fixed
+    z-index: 0
     width: 100%
     top: 80px
+    left: 0
     padding: 16px 0 //сверху и снизу по 16 пх
-    &-nav
+    background-color: $primary
+    color: #ffffff
+    transition: 0.2s
+    transform: translateY(0%)
+    &_active
+        transform: translateY(0)
+    &__nav
+        display: flex
+        align-items: center
+        justify-content: space-around
     &-link
         text-decoration: none
         font-size: 17px
-
+        color: #ffffff
     &-button 
         display: flex
         flex-direction: column
