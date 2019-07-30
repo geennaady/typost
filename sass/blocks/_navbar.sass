@@ -43,7 +43,7 @@
     background-color: $primary
     color: #ffffff
     transition: 0.2s
-    transform: translateY(0%)
+    transform: translateY(-100%)
     &_active
         transform: translateY(0)
     &__nav
@@ -84,3 +84,22 @@
         display: block // помогает выстраивать отступы у строчек
         font-size: 14px
         color: $gruy
+
+@media (max-width: 991px)
+    
+    .navbar
+        &__mobile, &__landline
+            display: none
+
+@media (max-width: 576px)
+    .logo
+        display: none
+    .menu
+        top: 60px
+        
+        &-button
+            height: 60px
+        &__nav
+            flex-direction: column
+        &-link
+            margin-bottom: 20px
