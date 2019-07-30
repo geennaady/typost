@@ -44,10 +44,11 @@
 }
 
 .hero {
-  background: #f1f1f1 url("../img/hero.jpg") no-repeat center top 80px;
+  background: #f1f1f1 url("../img/hero.jpg") no-repeat center top;
   background-size: contain;
   padding-top: 200px;
   padding-bottom: 270px;
+  margin-top: 80px;
 }
 
 .hero-title {
@@ -73,8 +74,8 @@
 
 @media (max-width: 991px) {
   .hero {
-    background-size: cover;
-    background-position: top left 30%;
+    background-size: 100%;
+    background-position: top left;
   }
 }
 
@@ -143,11 +144,13 @@
   transition: 0.2s;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  opacity: 0;
 }
 
 .menu_active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
