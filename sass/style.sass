@@ -15,8 +15,9 @@ $bg-secondary: #f1f1f1
 @import 'blocks/navbar'
 @import 'blocks/offer'
 
-@import 'blocks/_features'
-    
+@import 'blocks/features'
+@import 'blocks/catalog'
+
 //interface.sass
 
 
@@ -47,7 +48,19 @@ body
     background-color: $primary
     color: #ffffff
     +bold
-
+    &-fitting
+        padding: 10px
+        text-transform: uppercase
+        color: $primary
+        font-size: 11px
+        background-color: #fff
+        border: none
+    &-add
+        background-color: lighten($primary, 10%)
+        padding: 10px
+        color: #ffffff
+        font-size: 11px
+        border: none
 .bg-secondary
     background: $bg-secondary
 
